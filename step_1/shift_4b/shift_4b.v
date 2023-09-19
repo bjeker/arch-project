@@ -1,10 +1,11 @@
-module shift_4b(x);
+module shift_4b(x, y);
 
-  output out;
-  input x;
+  output xOut, yOut;
+  input x, y;
 
-  wire x, out;
+  wire x, y, xOut, yOut;
 
-  assign out = x;
+  assign xOut = x;
+  assign yOut = y;
 
 endmodule
