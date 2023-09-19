@@ -1,3 +1,3 @@
 # arch_project
-architexture project
-step 1
+architecture project
+step 1, code and latex report
