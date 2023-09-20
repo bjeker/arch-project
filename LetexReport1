@@ -30,7 +30,7 @@
 %	REPORT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Building an Integer ALU Step 1\\ CS 3339 \\ Group: The Architects} % Report title
+\title{Building an Integer ALU \\ CS 3339 \\ Group: The Architects} % Report title
 
 \author{Aaron \textsc{Reed} \& Carlo \textsc{Marroquin} \& Ryan \textsc{Bieker}} % Author name(s), add additional authors like: '\& James \textsc{Smith}'
 
@@ -62,7 +62,7 @@
 
 \section{Objective}
 
-To introduce the process and methodology of designing a new computer circuit from scratch by coding 1-bit circuits for NAND, NOT, NOR, and 4-bit Shift.
+To introduce the process and methodology of designing a new computer circuit from scratch by coding 1-bit circuits for Nand, Not, Nor, and 4-bit Shift.
 
 
 % If you have more than one objective, uncomment the below:
@@ -84,11 +84,11 @@ To introduce the process and methodology of designing a new computer circuit fro
 %	EXPERIMENTAL DATA
 %----------------------------------------------------------------------------------------
 
-\section{NAND Gate}
-The NAND gate is a NOT AND operation. We took two 1-bit inputs to preform an AND operation before doing the logical NOT operation. Our 1-bit inputs were x and y.
+\section{Nand Gate}
+The Nand gate is not and. So we took two 1-bit inputs to preform an and operation before doing the logical not operation. Our 1-bit inputs were x and y.
 
 %\begin{tabular}{l l}
-	%The NAND gate is NOT and. So we took two 1-bit integers to preform an and operation before doing the logical NOT operation. %& \SI{7.28}{\gram}\\ % Scientific/technical units are output using the \SI command, see the siunitx package documentation for more information on how to use this command
+	%The Nand gate is not and. So we took two 1-bit integers to preform an and operation before doing the logical not operation. %& \SI{7.28}{\gram}\\ % Scientific/technical units are output using the \SI command, see the siunitx package documentation for more information on how to use this command
 	%Mass of crucible and magnesium before heating & \SI{8.59}{\gram}\\
 	%Mass of crucible and magnesium oxide after heating & \SI{9.46}{\gram}\\
 	%Balance used & \#4\\
@@ -96,33 +96,33 @@ The NAND gate is a NOT AND operation. We took two 1-bit inputs to preform an AND
 %\end{tabular}
 \begin{figure}[H] % [H] forces the figure to be placed exactly where it appears in the text
 	%\centering % Horizontally center the figure
-	\includegraphics[width=1.2\textwidth]{nand_1b} % Include the figure
-	\caption{Our NAND gate.}
+	\includegraphics[width=1.2\textwidth]{nand} % Include the figure
+	\caption{Our Nand gate.}
 \end{figure}
 %----------------------------------------------------------------------------------------
 %	SAMPLE CALCULATION
 %----------------------------------------------------------------------------------------
 
-\section{NOT Gate}
-The NOT gate took a 1-bit input x and performed a logical NOT operation. 
+\section{Not Gate}
+The not gate took a 1-bit input x and did the logical not operation on them. 
 
 \begin{figure}[H] % [H] forces the figure to be placed exactly where it appears in the text
 	%\centering % Horizontally center the figure
 	\includegraphics[width=1.2\textwidth]{not_1b} % Include the figure
-	\caption{Our NOT gate.}
+	\caption{Our Not gate.}
 \end{figure}
 
 %----------------------------------------------------------------------------------------
 %	RESULTS AND CONCLUSIONS
 %----------------------------------------------------------------------------------------
 
-\section{NOR Gate}
-The NOR gate took our two 1-bit inputs and preformed a logical NOT OR operation. Our inputs are x and y.
+\section{Nor Gate}
+The nor gate took our two 1-bit inputs and preformed the logical not or operation. Our inputs are x and y.
 
 \begin{figure}[H] % [H] forces the figure to be placed exactly where it appears in the text
 	%\centering % Horizontally center the figure
 	\includegraphics[width=1.2\textwidth]{nor_1b} % Include the figure
-	\caption{Our NOR gate.}
+	\caption{Our Nor gate.}
 \end{figure}
 
 %----------------------------------------------------------------------------------------
@@ -130,12 +130,12 @@ The NOR gate took our two 1-bit inputs and preformed a logical NOT OR operation.
 %----------------------------------------------------------------------------------------
 
 \section{Shift}
-The shift took a 4-bit input as opposed to a 1-bit input, then one operation demonstrates the bits 1000 shifting right, and the bits 0001 shifting left.
+The shift took a 4-bit input as opposed to a 1-bit input then it shows the bit containing 1 shifting both to the right and left.
 
 \begin{figure}[H] % [H] forces the figure to be placed exactly where it appears in the text
 	%\centering % Horizontally center the figure
 	\includegraphics[width=1.2\textwidth]{shift_4b} % Include the figure
-	\caption{Our 4-bit Shift.}
+	\caption{Our Shift.}
 \end{figure}
 
 %----------------------------------------------------------------------------------------
@@ -157,7 +157,7 @@ The shift took a 4-bit input as opposed to a 1-bit input, then one operation dem
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 \section{Conclusion}
-The shift took the longest time out of all the operations we had to code. We also struggled getting on the same page in terms of what coding software we were using, especially since we all have varying experience with Verilog and Latex, but once we got on the same page we all seemed to work well together.
+The shift took the longest time out of all the operations we had to make. We also struggled getting on the same page in terms of what coding software we were using, especially since we all have varying experience with Verilog and Latex, but once we got on the same page we all seemed to work well together.
 
 %\printbibliography % Output the bibliography
 
