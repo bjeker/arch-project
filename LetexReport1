@@ -62,7 +62,7 @@
 
 \section{Objective}
 
-To introduce the process and methodology of deigning a new computer circuit from scratch by coding 1-bit circuits for Nand, Not, Nor, and 4-bit Shift.
+To introduce the process and methodology of designing a new computer circuit from scratch by coding 1-bit circuits for Nand, Not, Nor, and 4-bit Shift.
 
 
 % If you have more than one objective, uncomment the below:
@@ -159,7 +159,7 @@ The shift took a 4-bit input as opposed to a 1-bit input then it shows the bit c
 \section{Conclusion}
 The shift took the longest time out of all the operations we had to make. We also struggled getting on the same page in terms of what coding software we were using, especially since we all have varying experience with Verilog and Latex, but once we got on the same page we all seemed to work well together.
 
-\printbibliography % Output the bibliography
+%\printbibliography % Output the bibliography
 
 %----------------------------------------------------------------------------------------
 
