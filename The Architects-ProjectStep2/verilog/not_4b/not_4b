@@ -1,0 +1,73 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000268efdaa040 .scope module, "not_1b_test" "not_1b_test" 2 1;
+ .timescale 0 0;
+v00000268efdf57a0_0 .var "clk", 0 0;
+v00000268efdf5840_0 .net "out", 3 0, L_00000268efdc3200;  1 drivers
+v00000268efdf58e0_0 .var "x", 3 0;
+S_00000268efdaa1d0 .scope module, "a0" "not_4b" 2 16, 3 1 0, S_00000268efdaa040;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "x";
+    .port_info 1 /OUTPUT 4 "out";
+L_00000268efdc3200 .functor NOT 4, v00000268efdf58e0_0, C4<0000>, C4<0000>, C4<0000>;
+o00000268efdf6fd8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v00000268efdf5660_0 .net "o", 3 0, o00000268efdf6fd8;  0 drivers
+v00000268efdc2bf0_0 .net "out", 3 0, L_00000268efdc3200;  alias, 1 drivers
+v00000268efdf5700_0 .net "x", 3 0, v00000268efdf58e0_0;  1 drivers
+    .scope S_00000268efdaa040;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000268efdf57a0_0, 0, 1;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v00000268efdf58e0_0, 0, 4;
+    %end;
+    .thread T_0;
+    .scope S_00000268efdaa040;
+T_1 ;
+    %delay 10, 0;
+    %load/vec4 v00000268efdf57a0_0;
+    %nor/r;
+    %store/vec4 v00000268efdf57a0_0, 0, 1;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_00000268efdaa040;
+T_2 ;
+    %delay 10, 0;
+    %pushi/vec4 8, 0, 4;
+    %store/vec4 v00000268efdf58e0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 13, 0, 4;
+    %store/vec4 v00000268efdf58e0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v00000268efdf58e0_0, 0, 4;
+    %delay 10, 0;
+    %vpi_call 2 12 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_00000268efdaa040;
+T_3 ;
+    %vpi_call 2 19 "$dumpfile", "not_4b.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars", 32'sb00000000000000000000000000000000, v00000268efdf57a0_0 {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000001, v00000268efdf58e0_0 {0 0 0};
+    %vpi_call 2 22 "$dumpvars", 32'sb00000000000000000000000000000011, v00000268efdf5840_0 {0 0 0};
+    %end;
+    .thread T_3;
+    .scope S_00000268efdaa040;
+T_4 ;
+    %vpi_call 2 26 "$monitor", "At time %t, x(%b) = out(%b)", $time, v00000268efdf58e0_0, v00000268efdf5840_0 {0 0 0};
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\not_4b_test.v";
+    ".\not_4b.v";

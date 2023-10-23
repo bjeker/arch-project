@@ -1,0 +1,76 @@
+$date
+	Sun Sep 17 19:10:13 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module nor_1b_test $end
+$var reg 1 ! clk $end
+$upscope $end
+$scope module nor_1b_test $end
+$var reg 1 " x $end
+$upscope $end
+$scope module nor_1b_test $end
+$var reg 1 # y $end
+$upscope $end
+$scope module nor_1b_test $end
+$var reg 1 $ ci $end
+$upscope $end
+$scope module nor_1b_test $end
+$var wire 1 % out $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1%
+0$
+0#
+0"
+0!
+$end
+#5
+1!
+#10
+0%
+0!
+1"
+#15
+1!
+#20
+0!
+1#
+#25
+1!
+#30
+0!
+1$
+#35
+1!
+#40
+0!
+0#
+#45
+1!
+#50
+0!
+0"
+#55
+1!
+#60
+0!
+#65
+1!
+#70
+1%
+0!
+0$
+#75
+1!
+#80
+0!

@@ -1,0 +1,50 @@
+$date
+	Mon Oct 23 16:03:52 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module xnor_1b_test $end
+$var reg 1 ! clk $end
+$upscope $end
+$scope module xnor_1b_test $end
+$var reg 4 " x [3:0] $end
+$upscope $end
+$scope module xnor_1b_test $end
+$var reg 4 # y [3:0] $end
+$upscope $end
+$scope module xnor_1b_test $end
+$var wire 4 $ out [3:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1111 $
+b0 #
+b0 "
+0!
+$end
+#10
+b111 $
+b1000 "
+1!
+#20
+b1110 $
+b1001 #
+0!
+#30
+b1011 $
+b1101 "
+1!
+#40
+b100 $
+b110 #
+0!
+#50
+1!
