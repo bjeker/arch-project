@@ -12,21 +12,12 @@
 
 module control;
 
-  output [3:0] Result;
+  output [3:0] AndResult, NandResult, OrResult, NorResult, XorResult, XnorResult, NotResult, ShiftResult, AddResult, SubResult;
+  output [7:0] MultResult;
   output CoutResult;
-  input [3:0] x, y;
+  input [3:0] x, y, operation;
   input CinResult;
-  input [4:0] Operation;
 
-  wire x, y, Result, AddResult;
-
-
-  //instantiations
-  alu_add_4b add_4b(.x(x), .y(y), Cin(CinResult), out(AddResult), Cout(CoutResult));
-
-  case(Operation)
-    4'b 0000: Result = AddResult;
-    default: Result = 4'b0000
-  endcase
+  wire x, y, AndResult, NandResult, OrResult, NorResult, XorResult, XnorResult, NotResult, ShiftResult, AddResult, SubResult, MultResult;
 
 endmodule

@@ -1,0 +1,80 @@
+$date
+	Wed Nov 29 17:20:58 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module control_test $end
+$var reg 1 ! clk $end
+$upscope $end
+$scope module control_test $end
+$var reg 4 " x [3:0] $end
+$upscope $end
+$scope module control_test $end
+$var reg 4 # y [3:0] $end
+$upscope $end
+$scope module control_test $end
+$var wire 1 $ CoutResult $end
+$upscope $end
+$scope module control_test $end
+$var reg 1 % CinResult $end
+$upscope $end
+$scope module control_test $end
+$var reg 4 & Result [3:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1100 &
+1%
+x$
+b1110 #
+b1101 "
+0!
+$end
+#10
+b111 &
+0%
+b1000 #
+b1000 "
+1!
+#20
+b1011 &
+1%
+b1001 #
+b1010 "
+0!
+#30
+b0 &
+b1110 #
+b1101 "
+1!
+#40
+b11 &
+0!
+#50
+b1100 &
+1!
+#60
+b10 &
+0!
+#70
+bz &
+1!
+#80
+b1100 &
+0!
+#90
+b1110 &
+1!
+#100
+b110 &
+0!
+#110
+1!
