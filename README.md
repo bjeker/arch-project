@@ -1,3 +1,3 @@
 # arch_project
-architecture project
-code and latex reports
+Computer Architecture Project
+Building an Integer ALU
