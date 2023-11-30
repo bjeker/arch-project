@@ -14,7 +14,7 @@ module control;
 
   output [3:0] AndResult, NandResult, OrResult, NorResult, XorResult, XnorResult, NotResult, ShiftResult, AddResult, SubResult;
   output [7:0] MultResult;
-  output CoutResult;
+  output Cout;
   input [3:0] x, y, operation;
   input CinResult;
 
