@@ -8,7 +8,7 @@ reg [3:0] x = 0;
 reg [3:0] y = 0;
 reg [3:0] operation = 0;
 reg [3:0] Result = 0;
-reg Cout = 0;
+reg Cout = CoutResult 0;
 reg CinResult = 0;
 
 initial begin
@@ -115,6 +115,7 @@ end
 wire [3:0] AndResult, NandResult, OrResult, NorResult, XorResult, XnorResult, NotResult, ShiftResult, AddResult, SubResult;
 wire [7:0] MultResult;
 wire CoutResult;
+
 
 //instantiations
 and_4b and4(.x(x), .y(y), .out(AndResult));
